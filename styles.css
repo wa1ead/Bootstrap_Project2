@@ -89,26 +89,19 @@ header {
 
 .hero-text button {
   background-color: var(--contrast);
-  padding: 0.8rem 2rem;
+  color: var(--primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
   border: 1px solid var(--primary);
   border-radius: 1rem;
   cursor: pointer;
+  transition: background-color 0.2s ease
 }
 
 .hero-text button:hover {
   background-color: #2E073F;
+  color: var(--contrast);
   border: 1px solid var(--contrast);
-  color: var(var(--contrast))
-}
-
-
-button a {
-  text-decoration: none;
-  color: var(--primary);
-  font-weight: 400;
-  font-size: 1.5rem
-}
-
-button a:hover {
-  color: var(--contrast)
 }
