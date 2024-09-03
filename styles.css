@@ -109,6 +109,7 @@ header {
   border: 1px solid var(--contrast);
 }
 
+/* FOOTER */
 .footer-division{
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
@@ -140,3 +141,61 @@ header {
   height: 40px
 }
 
+/* RESPONSIVITY */
+@media screen and (max-width:780px) {
+  .logo h1 {
+    font-weight: 200;
+    font-size: 1rem
+  }
+  
+  .navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem
+  }
+
+  .navigation a{
+    font-weight: 500
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-text{
+    margin-top: 10rem;
+    text-align: center
+  }
+
+  .hero-text h1{
+    font-size: 1.5rem;
+  }
+
+  .hero-text p{
+    font-size: 1rem
+  }
+
+  .hero-text button{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin-top: 0
+  }
+
+  .footer-division{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 2rem;
+    margin-top: 5rem;
+    padding: 0;
+  }
+
+  .footer-division h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .footer-division p{
+    font-size: 1rem;
+    font-weight: 500
+  }
+}
